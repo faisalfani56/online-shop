@@ -22,8 +22,8 @@ Route::get('/produk	', function () {
 
 })->name('produk');
 
-Route::get('/detail-produk/{id}', function ($id) {
-  return view('detail-produk',array('id'=>$id));
+Route::get('/detail-produk', function () {
+  return view('detail-produk');
     // return view('welcome');
 })->name('detail-produk');
 
